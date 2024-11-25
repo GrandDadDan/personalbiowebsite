@@ -1,0 +1,16 @@
+{
+  "name": "personal-bio",
+  "version": "1.0.0",
+  "description": "<h1>My Personal Bio Website</h1>",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://itchisushi.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
