@@ -1,3 +1,3 @@
 <h1>My Personal Bio Website</h1>
 
-<h2>This is a personal bio websote that will displayed as my websiite portfolio to showcase all my projects, skills, experience, and education.</h2>
+<p>This is a personal bio websote that will be displayed as my website portfolio to showcase who I am, all my projects, skills, experience, and education.</p>
