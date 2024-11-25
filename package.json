@@ -4,12 +4,12 @@
   "description": "<h1>My Personal Bio Website</h1>",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://ItchiSushi.github.io/personal-bio",
+  "homepage": "https://itchisushi.github.io/personal-bio",
   "dependencies": {
     "gh-pages": "^6.2.0"
   }
