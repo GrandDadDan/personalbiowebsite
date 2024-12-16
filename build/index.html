@@ -49,7 +49,6 @@
             text-align: center;
         }
 
-
         #btnClose {
             width: 100px;
             text-align: center;
@@ -65,14 +64,14 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse " id="navmenu">
 
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item ">
-                    <a href="#aboutme" class="nav-link  text-light">About Me</a>
+                    <a href="index.html" class="nav-link  text-light">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#education" class="nav-link  text-light">Education</a>
+                    <a href="education.html" class="nav-link  text-light">Education</a>
                 </li>
                 <li class="nav-item">
                     <a href="#experience" class="nav-link  text-light">Experience</a>
@@ -94,12 +93,34 @@
     <div class="container p-5">
         <div class="d-sm-flex align-items-center justify-content-between">
             <div>
-                <img src="me.jpg" class="img-fluid rounded-circle" width="50%" height="200px" alt="...">
+                <img src="me.jpg" class="img-fluid rounded-circle" width="60%" height="200px" alt="..." id="imgMe">
+            </div>
+            <div class="container p-3">
+                <h1>Aspiring <span class="text-warning">Web/Software Developer</span></h1>
+                <div class="container p-2">
+                    <a href="https://www.instagram.com/daniel_penguin/" class="text-black">
+                        <i class="bi bi-instagram h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-marais-oct/" class="text-black">
+                        <i class="bi bi-linkedin h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://github.com/ItchiSushi" class="text-black">
+                        <i class="bi bi-github h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@danielmarais475?_t=8rxEpbxWluS&_r=1" class="text-black">
+                        <i class="bi bi-tiktok h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100094136047511" class="text-black">
+                        <i class="bi bi-facebook h4 text-warning m-2"></i>
+                    </a>
+                    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                        <i class="bi bi-arrow-up-circle h4 text-warning"></i>
+                    </a>
+                </div>
             </div>
 
-            <h1>Aspiring <span class="text-warning">Web/Software Developer</span></h1>
             <div>
-                <p class="lead my-4 text">
+                <p class="lead my-2">
                     Daniel Marais, Advanced Diploma Graduate, Graphic Designer.</p>
             </div>
 
@@ -177,21 +198,18 @@
                             <i class="bi bi-heart-pulse-fill"></i>
                         </div>
                         <h3 class="card-title mb-3">Fitness Freak</h3>
-                        <p class="card-text">
-                            Ex-Western Province athlete, passionate about health and fitness. Competed locally and
-                            nationally for 8 years.
 
-                        </p>
                         <button class="btn btn-warning" id="btnAthletics">Show More</button>
-                        <div id="box3" class="card-text position-relative">
-                            <h1 id="title3"></h1>
-                            <div class="container p-4">
-                                <p class="para3"></p>
-                                <button id="btnClose3" class="btn btn-warning mt-3" width="50px">Show Less</button>
 
-                            </div>
+                    </div>
+                    <div id="box3" class="card-text position-relative">
+                        <h1 id="title3"></h1>
+                        <div class="container p-4">
+                            <p class="para3"></p>
+                            <button id="btnClose3" class="btn btn-warning mt-3" width="50px">Show Less</button>
 
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -275,7 +293,7 @@
             $('#box3').slideUp();
             $('#btnAthletics').fadeOut();
             $('#title3').text('Ex - Western Province Athletic');
-            $('.para3').text('Video games has been apart of my life since childhood and has become a part of who I am today. My most favourite games to play are Tekken, Rocket League, and Smite');
+            $('.para3').text('Consistantly made western province province team for the decathlon combined events. Passionate about health and fitness. Competed locally and nationally for 8 years.');
             $('#box3').slideDown();
             $('#btnClose3').click(function () {
                 $('#box3').slideUp();
