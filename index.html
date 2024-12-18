@@ -8,362 +8,536 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Personal Bio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <title>Personal Bio Portfolio</title>
 </head>
 
 <body>
+    <style>
+        #paraAbout {
+            text-align: justify;
+        }
+
+        #box1 {
+            background: black;
+            color: white;
+            width: 100%;
+            height: 80%;
+            padding: 5%;
+            text-align: center;
+        }
+
+        #box2 {
+            background: black;
+            color: white;
+            width: 100%;
+            height: 80%;
+            padding: 5%;
+            text-align: center;
+        }
+
+        #box3 {
+            background: black;
+            color: white;
+            width: 100%;
+            height: 80%;
+            padding: 5%;
+            text-align: center;
+        }
+
+        #btnClose {
+            width: 100px;
+            text-align: center;
+        }
+    </style>
     <!-- Navbar -->
 
 </body>
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark py3 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">Personal Bio</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-black navbar-dark py3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">Personal Bio Portfolio</a>
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ">
-                        <a href="#aboutme" class="nav-link  text-light">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link  text-light">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link  text-light">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link  text-light">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link  text-light">Projects</a>
-                    </li>
-                </ul>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navmenu">
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link  text-light">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link  text-light">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link  text-light">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link  text-light">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link  text-light">Projects</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Showcase -->
+<!-- Showcase -->
 
-    <section class="bg-black text-light p-5 p-lg-5 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <img class="imgfluid d-none d-sm-block rounded-circle m-5" width="10%" src="me.jpg" alt="">
-
+<section class="bg-black text-light p-5 p-lg-5 text-center text-sm-start">
+    <div class="container p-5">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <img src="me.jpg" class="img-fluid rounded-circle" width="60%" height="200px" alt="..." id="imgMe">
+            </div>
+            <div class="container p-3">
                 <h1>Aspiring <span class="text-warning">Web/Software Developer</span></h1>
-                <div>
-                    <p class="lead my-4 text">
-                        Daniel Marais, Advanced Diploma Graduate, Graphic Designer.</p>
-                </div>
+                <div class="container p-2">
+                    <a href="https://www.instagram.com/daniel_penguin/" class="text-black">
+                        <i class="bi bi-instagram h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-marais-oct/" class="text-black">
+                        <i class="bi bi-linkedin h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://github.com/ItchiSushi" class="text-black">
+                        <i class="bi bi-github h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@danielmarais475?_t=8rxEpbxWluS&_r=1" class="text-black">
+                        <i class="bi bi-tiktok h4 text-warning m-2"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100094136047511" class="text-black">
+                        <i class="bi bi-facebook h4 text-warning m-2"></i>
+                    </a>
 
+                </div>
             </div>
+
+            <div>
+                <p class="lead my-2">
+                    Honors Student, Advanced Diploma Graduate, Graphic Designer.</p>
+            </div>
+
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <!-- About me -->
+<!-- About me -->
 
-    <section class="p-5" id="aboutme">
-        <div class="container">
-            <h1 class="text-center mb-4 text-black">About Me</h1>
-            <h4 class="mb-3 text-black">My Name is Daniel Marais</h4>
-            <p class="mb-5 text-black"> I recently completed my advanced diploma qualification in Information and
-                Communications Technology, majoring in Applications Development at the Cape Peninsula University of
-                Technology. I am currently in pursuite of my postgradute diploma/honors in ICT. I have practical
-                excperience in many programming languages such as HTML, CSS, Bootstrap, Java, Python etc.</p>
-        </div>
+<section class="p-5" id="aboutme">
+    <div class="container">
+        <h1 class="text-center mb-4 text-black">About Me</h1>
+        <h4 class="mb-3 text-black">My Name is Daniel Marais</h4>
+        <p class="mb-5 text-black" id="paraAbout"> I recently completed my advanced diploma qualification in Information
+            and
+            Communications Technology, majoring in Applications Development at the Cape Peninsula University of
+            Technology. I am currently in pursuite of my postgradute diploma/honors in ICT. I have practical
+            excperience in many programming languages such as HTML, CSS, Bootstrap, Java, Python etc.</p>
+    </div>
 
-        <div class="container">
-            <div class="row text-center g-5">
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-person-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Student
-
-                            </h3>
-                            <p class="card-text">
-                                Passionate about completing the highest level of studies in my course. Aiming for
-                                Masters/Doctorate in future.
-                            </p>
-                            <a href="" class="btn btn-warning">Read More</a>
+    <div class="container">
+        <div class="row text-center g-5">
+            <div class="col-md" id="card1">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
                         </div>
+                        <h3 class="card-title mb-3">Student
+
+                        </h3>
+
+                        <button class="btn btn-warning" id="btnStudent">Show More</button>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-controller"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Gamer
 
-                            </h3>
-                            <p class="card-text">
-                                Video games has been apart of my life since childhood and has become a part of who I am
-                                today.
-                            </p>
-                            <a href="" class="btn btn-warning">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-heart-pulse-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Fitness Freak</h3>
-                            <p class="card-text">
-                                Ex-Western Province athlete, passionate about health and fitness. Competed locally and
-                                nationally for 8 years.
+                    <div id="box1" class="card-text text-center position-relative">
+                        <h2 id="title1">
+                            </h1>
+                            <div class="container p-4">
+                                <p class="para1"></p>
+                                <button id="btnClose1" class="btn btn-warning mt-3" width="50px">Show Less</button>
 
-                            </p>
-                            <a href="" class="btn btn-warning">Read More</a>
-                        </div>
+                            </div>
+
                     </div>
                 </div>
             </div>
+            <div class="col-md" id="card2">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Gamer</h3>
+                        <button class="btn btn-warning" id="btnGamer">Show More</button>
+
+
+                    </div>
+                    <div id="box2" class="card-text position-relative">
+                        <h1 id="title2"></h1>
+                        <div class="container p-4">
+                            <p class="para2"></p>
+                            <button id="btnClose2" class="btn btn-warning mt-3" width="50px">Show Less</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md" id="card3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Fitness Freak</h3>
+
+                        <button class="btn btn-warning" id="btnAthletics">Show More</button>
+
+                    </div>
+                    <div id="box3" class="card-text position-relative">
+                        <h1 id="title3"></h1>
+                        <div class="container p-4">
+                            <p class="para3"></p>
+                            <button id="btnClose3" class="btn btn-warning mt-3" width="50px">Show Less</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+        <div>
 
-    <!-- Education -->
-
-    <section class="p-5 bg-black text-light" id="education">
-        <div class="container">
-            <h1 class="text-center mb-4 ">Education</h1>
-            <h4 class="mb-3">Cape Peninsula University of Technology</h4>
-            <p class="mb-5 "><span class="text-warning">2023 - 2024:</span> Expected Graduation - April 2025<br>
-                Advanced Diploma in Information and Communications Technology: Applications Development.<br>
-                Related Subjects: Applications Development Practice, Professional Developement, Applications Development
-                Theory, Research Methodologies, Project.
-            </p>
-            <h4 class="mb-3">Cape Peninsula University of Technology</h4>
-            <p class="mb-5"><span class="text-warning">2020 - 2022:</span> Graduated - April 2023<br>
-                Diploma in Information and Communications Technology: Applications Development.<br>
-                Related Subjects: Applications Development Practice, Information Systems, Project.
-            </p>
-            <h4 class="mb-3">Cape Peninsula University of Technology: False Bay College</h4>
-            <p class="mb-5"><span class="text-warning">2019 - 2019:</span> Graduated - April 2023<br>
-                Higher Certificate: ICT.<br>
-                Related Subjects: Business Practice, Programming, Quantitative Techniques.
-            </p>
         </div>
-    </section>
 
-    <!-- Experience-->
 
-    <section class="text-black bg-light p-5" id="experience">
-        <div class="container">
-            <h1 class="text-center mb-4">Experience</h1>
-            <h4 class="mb-3">Cardova - Full Time Motion Graphic Designer</h4>
-            <p class="mb-5"><strong>November 2022 - Current:</strong><br>
-                Developing creative solutions to complex design challenges. Collaborating with other video editors and
-                designers within the company. Adapting design concepts to different media formats, including web, social
-                media, print, and video. Creating 2D motion graphics for major clients of the company such as Clover,
-                Tropika, Woolworths, Expresso Show, Afternoon Express and many more using adobe suite software such as
-                After Effects, Photoshop, Illustrator, Premier Pro, and Media Encoder.
-            </p>
-            <h4 class="mb-3">Cardova - Motion Graphic Design Intern</h4>
-            <p class="mb-5"><strong class="text-black">November 2022 - April 2023:</strong><br>
-                Started out as an intern for 6 months, undergoing intensive on-the-job training before becoming a full
-                time graphic designer.
-            </p>
+
+    </div>
+
+</section>
+<!-- Education -->
+<section class=" bg-black text-white" id="education">
+    <div class="container p-5">
+        <div>
+            <h1 class="text-center" id="education">Education</h1>
         </div>
-    </section>
+    </div>
+    <div class="text-center">
+        <img src="CPUT_1-2000x1200.jpg" class="img-fluid float-middle mt-5" width="100%" alt="" id="imgSchool">
+    </div>
+</section>
 
-    <!-- Skills -->
 
-    <section class="p-5 bg-black text-light" id="skills">
+<section class="p-5 bg-black text-light">
 
-        <h1 class="text-center text-light">Technical Skills</h1>
-        <div class="container">
-            <br>
-            <h4 class="text-center text-light mb-5">
-                Self taught equipping myself with the strong understanding and fundamentals of all of the below skills:
-            </h4>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-filetype-html"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">HTML 5</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-filetype-css"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">CSS 3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black">
-                        <div class="card-body text-center text-light">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-bootstrap"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">Bootstrap 5</h3>
+    <div class="container py-5">
+        <h4 class="mb-3">Cape Peninsula University of Technology</h4>
+        <p class="mb-5 "><span class="text-warning">2023 - 2024:</span> Expected Graduation - April 2025<br>
+            Advanced Diploma in Information and Communications Technology: Applications Development.
+            Related Subjects: Applications Development Practice, Professional Developement, Applications Development
+            Theory, Research Methodologies, Project/ Thesis. <br>
+        </p>
+        <hr>
+        <h4 class="mb-3">Cape Peninsula University of Technology</h4>
+        <p class="mb-5"><span class="text-warning">2020 - 2022:</span> Graduated - April 2023<br>
+            Diploma in Information and Communications Technology: Applications Development.<br>
+            Related Subjects: Applications Development Practice, Information Systems, Project.
+        </p>
+        <img src="Apache-NetBeans.png" width="10%" alt="">
+        <img src="Android Studio.png" width="12%" alt="">
+        <img src="logo.png" width="12%" alt="">
+        <img src="postman-icon.svg" width="10%" alt="">
+        <hr>
+        <h4 class="mb-3">Cape Peninsula University of Technology: False Bay College</h4>
+        <p class="mb-5"><span class="text-warning">2019 - 2019:</span> Graduated - April 2023<br>
+            Higher Certificate: ICT.<br>
+            Related Subjects: Business Practice, Programming, Quantitative Techniques.
+        </p>
+        <img src="R.png" alt="">
 
+    </div>
+
+</section>
+<!-- Experience-->
+
+<section class="text-black bg-light p-5" id="experience">
+    <div class="container">
+        <h1 class="text-center mb-4">Experience</h1>
+        <h4 class="mb-3">Cardova - Full Time Motion Graphic Designer</h4>
+        <p class="mb-5"><strong>November 2022 - Current:</strong><br>
+            Developing creative solutions to complex design challenges. Collaborating with other video editors and
+            designers within the company. Adapting design concepts to different media formats, including web, social
+            media, print, and video. Creating 2D motion graphics for major clients of the company such as Clover,
+            Tropika, Woolworths, Expresso Show, Afternoon Express and many more using adobe suite software such as
+            After Effects, Photoshop, Illustrator, Premier Pro, and Media Encoder.
+        </p>
+        <img src="adobe-premiere-pro-logo-1-1-1536x1498.png" width="10%" alt="">
+        <img src="adobe-photoshop-logo.png" width="10%" alt="">
+        <img src="Adobe_Illustrator_CC_icon.svg.png" width="10%" alt="">
+        <img src="Adobe_After_Effects_CC_icon.svg.png" width="10%" alt="">
+        <hr>
+        <h4 class="mb-3">Cardova - Motion Graphic Design Intern</h4>
+        <p class="mb-5"><strong class="text-black">November 2022 - April 2023:</strong><br>
+            Started out as an intern for 6 months, undergoing intensive on-the-job training before becoming a full
+            time graphic designer.
+        </p>
+        <img src="adobe-premiere-pro-logo-1-1-1536x1498.png" width="10%" alt="">
+        <img src="Adobe_After_Effects_CC_icon.svg.png" width="10%" alt="">
+    </div>
+</section>
+<!-- Skills -->
+
+<section class="p-5 bg-black text-light" id="skills">
+
+    <h1 class="text-center text-light">Technical Skills</h1>
+    <div class="container">
+        <br>
+        <h4 class="text-center text-light mb-5">
+            Self taught equipping myself with the strong understanding and fundamentals of all of the below skills:
+        </h4>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="HTML5_badge.png" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">HTML 5</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="CSS 3.png" width="30%" alt="">
+                        </div>
+                        <h3 class="card-title mb-3 text-warning">CSS 3</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black">
+                    <div class="card-body text-center text-light">
+                        <div class="h1 mb-3">
+                            <img src="bootstrap-logo.png" width="30%" alt="">
+                        </div>
+                        <h3 class="card-title mb-3 text-warning">Bootstrap 5</h3>
 
                     </div>
 
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black">
-                        <div class="card-body text-center text-light">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-filetype-py"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">Python 3</h3>
+
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black">
+                    <div class="card-body text-center text-light">
+                        <div class="h1 mb-3">
+                            <img src="python-icon.webp" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">Python 3</h3>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-filetype-java"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">Java</h3>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="java-logo.png" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">Java</h3>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-github"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">Github</h3>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="github_PNG80.png" class="" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">Github</h3>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-git"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">Git</h3>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="git-icon-logo-png-transparent.png" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">Git</h3>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-filetype-js"></i>
-                            </div>
-                            <h3 class="card-title mb-3 text-warning">JavaScript</h3>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <img src="logo-javascript-icon-1024.png" width="30%" alt="">
                         </div>
+                        <h3 class="card-title mb-3 text-warning">JavaScript</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Projects -->
 
-    <!-- Projects -->
+<section class="p-5" id="projects">
+    <div class="container">
+        <h1 class="text-center mb-4 text-black">Projects</h1>
+        <h4 class="text-center text-black">I built projects using different IDEs and Programming Languages that can
+            be found on my Github:</h4><br>
+    </div>
 
-    <section class="p-5" id="projects">
-        <div class="container">
-            <h1 class="text-center mb-4 text-black">Projects</h1>
-            <h4 class="text-center text-black">I built projects using different IDEs and Programming Languages that can
-                be found on my Github:</h4><br>
-        </div>
-
-        <div class="container">
-            <div class="row text-center g-5">
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-car-front-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Rocket League Registration
-
-                            </h3>
-                            <p class="card-text">
-                                This is my capstone project that I built during my second year of university using
-                                Android Studio.
-                            </p>
-                            <a href="https://github.com/ItchiSushi/Personal-Projects/tree/main/Rocket%20League%20Registration"
-                                class="btn btn-warning">Go to Project</a>
+    <div class="container">
+        <div class="row text-center g-5">
+            <div class="col-md">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-car-front-fill"></i>
                         </div>
+                        <h3 class="card-title mb-3">Rocket League Registration
+
+                        </h3>
+                        <p class="card-text">
+                            This is my capstone project that I built during my second year of university using
+                            Android Studio.
+                        </p>
+                        <a href="https://github.com/ItchiSushi/Personal-Projects/tree/main/Rocket%20League%20Registration"
+                            class="btn btn-warning">Go to Project</a>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-tv"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Pengu-Tv
-
-                            </h3>
-                            <p class="card-text">
-                                This is capstone a project that i built in my final (third) year of studies. Built with
-                                Android Studio.
-                            </p>
-                            <a href="https://github.com/ItchiSushi/Personal-Projects/tree/main/PenguTv"
-                                class="btn btn-warning">Go to Project</a>
+            </div>
+            <div class="col-md">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-tv"></i>
                         </div>
+                        <h3 class="card-title mb-3">Pengu-Tv
+
+                        </h3>
+                        <p class="card-text">
+                            This is capstone a project that i built in my final (third) year of studies. Built with
+                            Android Studio.
+                        </p>
+                        <a href="https://github.com/ItchiSushi/Personal-Projects/tree/main/PenguTv"
+                            class="btn btn-warning">Go to Project</a>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="card bg-black text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-fire"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Python Mini Projects</h3>
-                            <p class="card-text">
-                                I made a bunch of beginner to intermmediate projects to showcase my understanding of
-                                Python.
-                            </p>
-                            <a href="https://github.com/ItchiSushi/BeginnerProjects" class="btn btn-warning">Beginner
-                                Projects</a>
-                            <a href="https://github.com/ItchiSushi/IntermediateProjects"
-                                class="btn btn-warning">Intermmediate Projects</a>
+            </div>
+            <div class="col-md">
+                <div class="card bg-black text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-fire"></i>
                         </div>
+                        <h3 class="card-title mb-3">Python Mini Projects</h3>
+                        <p class="card-text">
+                            I made a bunch of beginner to intermmediate projects to showcase my understanding of
+                            Python.
+                        </p>
+                        <a href="https://github.com/ItchiSushi/BeginnerProjects" class="btn btn-warning">Beginner
+                            Projects</a>
+                        <a href="https://github.com/ItchiSushi/IntermediateProjects"
+                            class="btn btn-warning">Intermmediate Projects</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Footer -->
 
-    <!-- Footer -->
+<footer class="p-5 bg-black text-white text-center position-relative">
 
-    <footer class="p-5 bg-black text-white text-center position-relative">
+    <div class="container">
+        <p class="lead"><strong>Connect With Me:</strong></p>
+        <a href="https://www.instagram.com/daniel_penguin/" class="text-black">
+            <i class="bi bi-instagram h1 text-warning m-4"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-marais-oct/" class="text-black">
+            <i class="bi bi-linkedin h1 text-warning m-4"></i>
+        </a>
+        <a href="https://github.com/ItchiSushi" class="text-black">
+            <i class="bi bi-github h1 text-warning m-4"></i>
+        </a>
+        <a href="https://www.tiktok.com/@danielmarais475?_t=8rxEpbxWluS&_r=1" class="text-black">
+            <i class="bi bi-tiktok h1 text-warning m-4"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100094136047511" class="text-black">
+            <i class="bi bi-facebook h1 text-warning m-4"></i>
+        </a>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1 text-warning"></i>
+        </a>
+    </div>
+</footer>
 
-        <div class="container">
-            <p class="lead"><strong>Connect With Me:</strong></p>
-            <a href="https://www.instagram.com/daniel_penguin/" class="text-black">
-                <i class="bi bi-instagram h1 text-warning m-4"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/daniel-marais-oct/" class="text-black">
-                <i class="bi bi-linkedin h1 text-warning m-4"></i>
-            </a>
-            <a href="https://github.com/ItchiSushi" class="text-black">
-                <i class="bi bi-github h1 text-warning m-4"></i>
-            </a>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1 text-warning"></i>
-            </a>
-        </div>
-    </footer>
+<script>
+    $(document).ready(function () {
+        $('#box1').hide();
+        $('#box2').hide();
+        $('#box3').hide();
+        $('#box1').slideUp();
+        $('#box2').slideUp();
+        $('#box3').slideUp();
+
+        // Student Card
+
+        $('#btnStudent').click(function () {
+            $('#box1').slideDown();
+            $('#btnStudent').fadeOut();
+            $('#title1').text('Honors Student In ICT');
+            $('.para1').text('Pursuing postgraduate diploma in 2025 in Information and Communications Technology. Majoring in Applications Development and striving to complete the highest level of studies in this course. Aiming for Masters/Doctorate in future.');
+            $('#btnClose1').click(function () {
+                $('#box1').slideUp();
+                $('#btnStudent').fadeIn();
+            });
+        });
+
+        // Gamer Card
+
+        $('#btnGamer').click(function () {
+            $('#box2').slideUp();
+            $('#btnGamer').fadeOut();
+            $('#title2').text('Casual PC Gamer');
+            $('.para2').text('Video games has been apart of my life since childhood and has become a part of who I am today. My most favourite games to play are Tekken, Rocket League, and Smite');
+            $('#box2').slideDown();
+            $('#btnClose2').click(function () {
+                $('#box2').slideUp();
+                $('#btnGamer').fadeIn();
+            });
+        });
+
+        // Athletics Card
+
+        $('#btnAthletics').click(function () {
+            $('#box3').slideUp();
+            $('#btnAthletics').fadeOut();
+            $('#title3').text('Ex - Western Province Athletic');
+            $('.para3').text('Consistantly made western province province team for the decathlon combined events. Passionate about health and fitness. Competed locally and nationally for 8 years.');
+            $('#box3').slideDown();
+            $('#btnClose3').click(function () {
+                $('#box3').slideUp();
+                $('#btnAthletics').fadeIn();
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
